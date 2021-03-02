@@ -4,7 +4,7 @@
 
 # Site
 title: XW's Blog
-subtitle: Good Good Study Day Day Up!
+subtitle: Good Good Study! Day Day Up!
 description: Suprise! You've been HACKED!
 keywords:
 author: Wei Xiao
@@ -14,7 +14,7 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://githubxiaowei.github.io
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -116,6 +116,6 @@ search:
   path: search.xml
   field: post
   format: html
-  limit: 100
+  limit: 10000
 
 
