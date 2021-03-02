@@ -212,8 +212,8 @@
         <p class="article-excerpt">
             
 1999 年 Barabási 和 Albert 提出了无标度网络模型（简称 BA 模型）。无标度网络的重要特征为： 无标度网络的节点度分布服从幂律分布。
-无标度网络的度分布 $p(d)$ 满足$$p(d)\sim d^{-\alpha}，$$其中 $d$ 代表度的大小， $\alpha$ 为度分布的幂律指数。 真实网络 $\alpha$ 值一般介于 2~3之间。
-近年来越来越多的研究表明， 真
+无标度网络的度分布 $p(d)$ 满足p(d)\sim d^{-\alpha}，其中 $d$ 代表度的大小， $\alpha$ 为度分布的幂律指数。 真实网络 $\alpha$ 值一般介于 2~3之间。
+近年来越来越多的研究表明， 真实世界网
         </p>
     </div>
 </article>
@@ -533,5 +533,20 @@ Quick
 <script src="/js/main.js"></script>
 
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
