@@ -105,3 +105,8 @@ deploy:
   type: git
   repo: git@github.com:githubxiaowei/githubxiaowei.github.io.git
   branch: master
+
+# MathJax
+mathjax:
+  enable: true
+  per_page: true
