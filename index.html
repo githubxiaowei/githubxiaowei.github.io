@@ -188,6 +188,86 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://githubxiaowei.github.io/2021/03/BPDC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/alen.png">
+      <meta itemprop="name" content="Anonymous">
+      <meta itemprop="description" content="Surprise! You're dead!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HELL">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/03/BPDC/" class="post-title-link" itemprop="url">RNN 训练算法 —— BPDC (Backpropagation-Decorrelation)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-03-23 19:30:22 / 修改时间：19:44:51" itemprop="dateCreated datePublished" datetime="2021-03-23T19:30:22+08:00">2021-03-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index"><span itemprop="name">神经网络</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>考虑模型循环网络模型：</p>
+<script type="math/tex; mode=display">
+x(k+1) = (1-\Delta t)x(k) +  \Delta t Wf[x(k)] \tag1{}</script><p>其中 $x(k) \in R^N$表示网络节点在激活前的状态，$W\in R^{N\times N}$表示网络结点之间相互连接的权重，网络的输出节点为 $\{x_i(k)| i\in O\}$，$O$为所有输出（或称“观测”）单元的下标集合</p>
+<p>训练的目标是为了减少观测状态和预期值之间误差，即最小化损失函数：</p>
+<script type="math/tex; mode=display">
+E = \frac{1}{2}\sum_{k=1}^K \sum_{i\in O} [x_i(k) - d_i(k)]^2 \tag{2}</script><p>其中 $d_i(k)$ 表示 $k$ 时刻第 $i$ 个节点的预期值</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/03/BPDC/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://githubxiaowei.github.io/2021/02/%E6%97%A0%E6%A0%87%E5%BA%A6%E7%BD%91%E7%BB%9C%E7%9A%84%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -335,20 +415,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -362,6 +442,9 @@
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
           <a href="https://goodgoodstudy.blog.csdn.net/" title="https:&#x2F;&#x2F;goodgoodstudy.blog.csdn.net" rel="noopener" target="_blank">CSDN</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://www.sci-hub.ren/" title="https:&#x2F;&#x2F;www.sci-hub.ren" rel="noopener" target="_blank">SciHub</a>
         </li>
     </ul>
   </div>
